@@ -27,9 +27,12 @@
         Links são longos. Encurte os Links que você deseja compartilhar, e acompanhe enquanto viajam através
         internet
       </h3>
-      <form class="home__short-form">
-        <input class="home__short-form-input" type="text" placeholder="Cole o seu link aqui">
-        <button class="home__short-form-btn">encurtar</button>
+      <form id="js-short-link-form" class="short-form">
+        <label class="short-form__short-input">
+          <input name="url" id="js-input-link" class="short-form__input" type="text" placeholder="Cole o seu link aqui">
+          <div class="short-form__input-close">&times;</div>
+        </label>
+        <button id="js-short-link-btn" class="short-form__btn">encurtar</button>
       </form>
     </div>
   </section>
@@ -86,4 +89,5 @@
 
   </footer>
 
+  <script src="./app/app.js"></script>
 </body>
