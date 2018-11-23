@@ -6,45 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Document</title>
+  <title>Chaordic | Encurte seus Links</title>
 </head>
 
 <body>
 
-  <header class="main-header">
-    <h1 class="main-header__logo">
-      <img class="main-header__logo-img" src="assets/logo-chaordic.png" alt="chaordic logo">
+  <header class="header">
+    <h1 class="header__logo">
+      <img class="header__logo-img" src="assets/logo-chaordic.png" alt="chaordic logo">
     </h1>
   </header>
 
-  <section class="short-link-block">
-    <h2>Encurte seus Links</h2>
-    <h3>
-      Links são longos. Encurte os Links que você deseja compartilhar, e acompanhe enquanto viajam através
-      internet
-    </h3>
-    <form>
-      <input type="text" placeholder="Cole o seu link aqui">
-      <button>encurtar</button>
-    </form>
+  <section class="home">
+    <div class="home__container">
+      <h2 class="home__title">Encurte seus links.</h2>
+      <h3 class="home__subtitle">
+        Links são longos. Encurte os Links que você deseja compartilhar, </br>e acompanhe enquanto viajam através
+        internet
+      </h3>
+      <form class="home__short-form">
+        <input class="home__short-form-input" type="text" placeholder="Cole o seu link aqui">
+        <button class="home__short-form-btn">encurtar</button>
+      </form>
+    </div>
   </section>
 
   <section class="top-links">
     <h2 class="title-secondary">Top 5</h2>
     <ul class="top-links__list">
       <li class="top-links__list-item">
-        <a href="#">https://chr.dc/xyzxyz</a>
-        <div>7.9919</div>
+        <a href="#" class="top-links__link">https://chr.dc/xyzxyz</a>
+        <div class="top-links__hints txt--gray-dark">7.9919</div>
       </li>
       <li class="top-links__list-item">
-        <a href="#">https://chr.dc/xyzxyz</a>
-        <div>7.9919</div>
+        <a href="#" class="top-links__link">https://chr.dc/xyzxyz</a>
+        <div class="top-links__hints txt--gray-dark">7.9919</div>
       </li>
       <li class="top-links__list-item">
-        <a href="#">https://chr.dc/xyzxyz</a>
-        <div>7.9919</div>
+        <a href="#" class="top-links__link">https://chr.dc/xyzxyz</a>
+        <div class="top-links__hints txt--gray-dark">7.9919</div>
       </li>
 
     </ul>
@@ -55,7 +58,7 @@
     <div>
       35.713.571
     </div>
-    <div>
+    <div class="txt--gray-dark">
       clicks em links
     </div>
   </section>
