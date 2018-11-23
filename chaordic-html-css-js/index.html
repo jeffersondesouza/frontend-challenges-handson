@@ -21,10 +21,10 @@
   </header>
 
   <section class="home">
-    <div class="home__container">
+    <div class="container-lg home__container">
       <h2 class="home__title">Encurte seus links.</h2>
       <h3 class="home__subtitle">
-        Links são longos. Encurte os Links que você deseja compartilhar, </br>e acompanhe enquanto viajam através
+        Links são longos. Encurte os Links que você deseja compartilhar, e acompanhe enquanto viajam através
         internet
       </h3>
       <form class="home__short-form">
@@ -34,9 +34,15 @@
     </div>
   </section>
 
-  <section class="top-links">
-    <h2 class="title-secondary">Top 5</h2>
+  <section class="container-lg top-links">
+    <header class="top-links__header">
+      <h2 class="title-secondary">Top 5</h2>
+    </header>
     <ul class="top-links__list">
+      <li class="top-links__list-item">
+        <a href="#" class="top-links__link">https://chr.dc/xyzxyz</a>
+        <div class="top-links__hints txt--gray-dark">7.9919</div>
+      </li>
       <li class="top-links__list-item">
         <a href="#" class="top-links__link">https://chr.dc/xyzxyz</a>
         <div class="top-links__hints txt--gray-dark">7.9919</div>
@@ -53,21 +59,27 @@
     </ul>
   </section>
 
-  <section class="total-hints-block">
-    <h2 class="title-secondary">hits</h2>
-    <div>
-      35.713.571
-    </div>
-    <div class="txt--gray-dark">
-      clicks em links
+  <section class="hints">
+    <div class="container-lg">
+      <h2 class="title-secondary">hits</h2>
+      <div class="hints__total">
+        <div class="hints__total-value">
+          35.713.571
+        </div>
+        <div class="hints__total-clicks txt--gray-dark">clicks em links</div>
+      </div>
     </div>
   </section>
 
-  <footer class="main-footer">
-    <a href="#">chr.dc</a>
-    <nav>
-      <a href="">
+  <footer class="container footer">
+    <div class="footer__brand">
+      <a href="#">chr.dc</a>
+    </div>
+    <nav class="footer__nav">
+      <a href="" class="footer__nav-item">
         <img src="assets/icon-twitter.png" alt="twitter logo">
+      </a>
+      <a href="" class="footer__nav-item">
         <img src="assets/icon-facebook.png" alt="facebook logo">
       </a>
     </nav>

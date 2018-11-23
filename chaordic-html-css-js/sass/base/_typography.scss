@@ -7,19 +7,21 @@ a{
     &:link,
     &:active,
     &:visited{
-        color: $prymary-color;
+        color: $primary-color;
         text-decoration: none;
     }
     &:hover{
-        color: $prymary-color-dark;
+        color: $primary-color-dark;
 
     }
 }
 
 .title-secondary{
-    color: $prymary-color;
+    color: $primary-color;
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
+    font-size: $font-size-md;
+    text-align: center;
 }
 
 .txt--gray-dark{
@@ -33,7 +35,7 @@ a{
         font-size: $font-size-lg;
     }
     &__subtitle{
-        font-size: $font-size-default;
+        font-size: 1.5rem;
         color: $gray-light;
         font-weight: 400;
        text-align: center;
@@ -44,6 +46,10 @@ a{
 }
 
 .top-links{
+    font-size: $font-size-default;
+    &__link{
+        font-weight: 700;
+    }
     &__hints{
         color: $gray-dark;
     }

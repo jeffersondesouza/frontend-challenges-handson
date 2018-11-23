@@ -1,10 +1,17 @@
 @import './abstracts/colors';
 @import './abstracts/font-sizes';
 
+
 @import './abstracts/mixins';
+@import './abstracts/utils';
 
 @import './base/base';
 @import './base/typography';
 
+@import './components/top-links';
+@import './components/hints';
+
+
 @import './layout/main-header';
 @import './layout/home';
+@import './layout/footer';
