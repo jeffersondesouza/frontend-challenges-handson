@@ -1,0 +1,31 @@
+.hints{
+    position: relative;
+    padding: 5rem 0;
+    background-color: $gray-light;
+    @include absFlexCenter;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 2.5rem solid transparent;
+        border-top-color: $white;
+        top: 0;
+    }
+    &__total{
+        @include absFlexCenter;
+        padding: 2.5rem 0 0 0;
+    }
+    &__total-value{
+        color: $primary-color;
+        font-size: $font-size-md;
+        background-color: $white;
+        padding: .5rem 1rem;
+        border: 1px solid $gray-light-2;
+        border-radius: .5rem;
+    }
+    &__total-clicks{
+        font-size: $font-size-default;
+        padding: .5rem;
+    }
+}
