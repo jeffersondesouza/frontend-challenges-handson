@@ -16,6 +16,8 @@
         font-size: $font-size-default;
         font-weight: 600;
         color: $orange;
+        transition: color .5s;
+
         &::placeholder {
             color: $orange;
         }
@@ -26,7 +28,18 @@
         top: 50%;
         left: 90%;
         transform: translate(-50%, -50%);
-        display: none;
+        transition: color .5s;
+        cursor: pointer;
+        &--hidden{
+            display: none;
+            color: transparent;
+        }
+        &--shown{
+            display: block;
+
+            color: $white;
+
+        }
     }
     &__btn {
         border: none;

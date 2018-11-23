@@ -145,7 +145,8 @@ a:hover {
     margin-right: 1rem;
     font-size: 1.6rem;
     font-weight: 600;
-    color: #FF6E15; }
+    color: #FF6E15;
+    transition: color .5s; }
     .short-form__input::placeholder {
       color: #FF6E15; }
   .short-form__input-close {
@@ -154,7 +155,14 @@ a:hover {
     top: 50%;
     left: 90%;
     transform: translate(-50%, -50%);
-    display: none; }
+    transition: color .5s;
+    cursor: pointer; }
+    .short-form__input-close--hidden {
+      display: none;
+      color: transparent; }
+    .short-form__input-close--shown {
+      display: block;
+      color: #fff; }
   .short-form__btn {
     border: none;
     background-color: #FF6E15;
