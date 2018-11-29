@@ -4,12 +4,19 @@ const shortLinkInput = document.getElementById('js-input-link');
 
 const shortLinkClose = document.getElementById('js-input-close');
 
+let copyLinkMode = false;
 
 shortLinkForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
+    if (copyLinkMode) {
+        copyLink(shortLinkInput);
+        return;
+    }
+
     if (isValidLink(shortLinkInput.value)) {
 
+        copyLinkMode = true;
         makeTransparent(shortLinkBtn);
         makeTransparent(shortLinkInput);
 
@@ -29,32 +36,14 @@ shortLinkForm.addEventListener('submit', (event) => {
 
 
 shortLinkClose.addEventListener('click', (event) => {
+    copyLinkMode = false;
     resetShorBtnStyle(shortLinkBtn, 'encurtar');
     resetInputStyle(shortLinkInput, '')
     resetShortLinkClose(shortLinkClose)
-
 });
 
 
 
-shortLinkForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    if (isValidLink(shortLinkInput.value)) {
-
-        makeTransparent(shortLinkBtn);
-        makeTransparent(shortLinkInput);
-
-        const intervalId = setInterval(() => {
-            resetShorBtnStyle(shortLinkBtn, 'Copiar');
-            addCssClass(shortLinkClose, 'short-form__input-close--shown')
-            resetInputStyle(shortLinkInput, getShorterLink())
-        }, 500);
-
-        clearInterval(intervalId);
-    }
-
-});
 
 
 
@@ -89,7 +78,10 @@ const getShorterLink = () => {
 }
 
 const createLink = () => {
-    
     return Math.random().toString(36).substring(7);
 };
 
+const copyLink = (shortLinkInput) => {
+    shortLinkInput.select();
+    document.execCommand('copy')
+}
