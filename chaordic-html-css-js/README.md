@@ -5,4 +5,4 @@ O desafio proposto consiste numa **landing page** simulando um encurtador de lin
 
 [Repositório com detalhes do escopo](https://github.com/chaordic/frontend-intern-challenge)
 
-![Página em funcionamento](/assets/Shortener-interaction.gif)
+![Página em funcionamento](/assets/functional.gif)
