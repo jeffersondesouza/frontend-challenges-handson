@@ -9,7 +9,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class ShorterLinkFormComponent implements OnInit {
 
   shorterForm: FormGroup;
-  submited = false;
+  copyMode = false;
 
   constructor(
     private formBuilder: FormBuilder
@@ -19,22 +19,34 @@ export class ShorterLinkFormComponent implements OnInit {
     this.shorterForm = this.formBuilder.group({
       url: ''
     });
+
   }
 
-  onSumbit({ value }) {
-    console.log(value);
+  onResetForm() {
+    this.shorterForm.reset();
+    this.copyMode = false;
+  }
+
+  onSumbit({ value }, urlInput) {
     if (value.url) {
-      this.submited = true;
+      this.copyMode = true;
+
 
       this.shorterForm.reset({
         url: this.getShorterLink()
       });
+      this.copyLink(urlInput);
     }
   }
 
   private getShorterLink() {
     const newLink = this.createLink();
     return `http://chr.dc/${newLink}`
+  }
+
+  private copyLink(shortLinkInput) {
+    shortLinkInput.select();
+    document.execCommand('copy')
   }
 
   private createLink() {

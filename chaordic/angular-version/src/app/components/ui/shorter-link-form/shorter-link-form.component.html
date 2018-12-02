@@ -1,7 +1,20 @@
-<form [formGroup]="shorterForm" (ngSubmit)="onSumbit(shorterForm)" class="short-form">
+<form [formGroup]="shorterForm" (ngSubmit)="onSumbit(shorterForm, urlInput)" class="short-form">
   <label class="short-form__short-input">
-    <input formControlName="url" class="short-form__input" type="text" placeholder="Cole o seu link aqui">
-    <div id="js-input-close" class="short-form__input-close short-form__input-close--hidden">&times;</div>
+    <input #urlInput formControlName="url" 
+      class="short-form__input" 
+      type="text" 
+      placeholder="Cole o seu link aqui">
+    <div id="js-input-close"
+      (click)="onResetForm()"
+      class="short-form__input-close short-form__input-close--hidden"
+      [ngClass]="{
+        'short-form__input-close--hidden':!copyMode,
+        'short-form__input-close--shown':copyMode
+      }"
+      >&times;
+    </div>
   </label>
-  <button id="js-short-link-btn" class="short-form__btn">encurtar</button>
+  <button id="js-short-link-btn" class="short-form__btn">{{
+      copyMode ? 'copiar': 'encurtar'
+  }}</button>
 </form>
