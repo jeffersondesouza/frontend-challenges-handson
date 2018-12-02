@@ -1,0 +1,7 @@
+<form [formGroup]="shorterForm" (ngSubmit)="onSumbit(shorterForm)" class="short-form">
+  <label class="short-form__short-input">
+    <input formControlName="url" class="short-form__input" type="text" placeholder="Cole o seu link aqui">
+    <div id="js-input-close" class="short-form__input-close short-form__input-close--hidden">&times;</div>
+  </label>
+  <button id="js-short-link-btn" class="short-form__btn">encurtar</button>
+</form>
