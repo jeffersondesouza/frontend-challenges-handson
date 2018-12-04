@@ -1,0 +1,12 @@
+.header {
+    // border-bottom: 1px solid $white;
+
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    &__details {}
+}

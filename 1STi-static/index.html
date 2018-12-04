@@ -1,53 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>1STi | Como está o tempo?</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main class="app">
-        <header>Previsão do Tempo</header>
-        <section class="search">
-            <div class="search__details">
-                <div class="city-wheather">
-                    <header class="city-wheather__header">
-                        <div class="city-wheather__header-city">Niteroi, Rj - Brasil</div>
-                        <div>&times;</div>
-                    </header>
-                    <div>
-                        <div class="city-wheather__temp">20 C</div>
-                        <div class="city-wheather__state">Nublado</div>
-                    </div>
-                    <div class="city-wheather__details">
-                        <div class="city-wheather__variation">
-                            <div class="city-wheather__variation-down">16</div>
-                            <div class="city-wheather__variation-up">25</div>
-                            <div class="city-wheather__fell">Sençaão 19</div>
-                        </div>
-                    </div>
-                    <ul class="city-wheather__week">
-                        <li class="city-wheather__week-item">
-                            <div class="city-wheather__week-item-day">Terça</div>
-                            <div class="city-wheather__week-item-variation">
-                                <div>18</div>
-                                <div>26</div>
-                            </div>
-                        </li>
-                    </ul>
+        <header class="header container">
+            <h1 class="title-primary">
+                Previsão do Tempo
+            </h1>
+        </header>
+        <section class="city">
+            <header class="city__header">
+                <div class="city__header-city">Niteroi, Rj - Brasil</div>
+                <div class="city__close">&times;</div>
+            </header>
+            <div class="city__temp">
+                <div class="city__temp-value">20C</div>
+                <div class="city__temp-state">Nublado</div>
+            </div>
+            <div class="city__max-min">
+                <div class="city__variation">
+                    <div class="bold">!16</div>
+                    <div class="bold">!25</div>
+                </div>
+                <div class="city__fell">
+                    <span class="thin">Sensação</span>
+                    <span class="bold">19</span>
                 </div>
             </div>
-            <form action="" class="search__form">
-                <label for="">
-                    <input type="text" placeholder="Insira aqui o nome da cidade">
-                    <span>O</span>
-                </label>
-            </form>
+            <div class="city__wind">
+                <div class="city__wind-value">
+                    <span class="thin">Vento</span>&nbsp;<span class="bold">18Km/h</span>
+                </div>
+                <div>
+                    <span class="thin">Humidade</span>&nbsp;<span class="bold">89%</span>
+                </div>
+            </div>
+            <ul class="city__week">
+                <li class="city__week-item">
+                    <div class="city__week-item-day bold">Terça</div>
+                    <div class="city__week-item-variation bold primary">
+                        <div class="city__week-item-variation-value">18</div>
+                        <div class="city__week-item-variation-value">26</div>
+                    </div>
+                </li>
+                <li class="city__week-item">
+                    <div class="city__week-item-day bold">Terça</div>
+                    <div class="city__week-item-variation bold primary">
+                        <div class="city__week-item-variation-value">18</div>
+                        <div class="city__week-item-variation-value">26</div>
+                    </div>
+                </li>
+                <li class="city__week-item">
+                    <div class="city__week-item-day bold">Terça</div>
+                    <div class="city__week-item-variation bold primary">
+                        <div class="city__week-item-variation-value">18</div>
+                        <div class="city__week-item-variation-value">26</div>
+                    </div>
+                </li>
+                <li class="city__week-item">
+                    <div class="city__week-item-day bold">Terça</div>
+                    <div class="city__week-item-variation bold primary">
+                        <div class="city__week-item-variation-value">18</div>
+                        <div class="city__week-item-variation-value">26</div>
+                    </div>
+                </li>
+
+            </ul>
         </section>
+        <form action="" class="search__form">
+            <label for="">
+                <input type="text" placeholder="Insira aqui o nome da cidade">
+                <span>O</span>
+            </label>
+        </form>
         <section class="capitals">
             <h2 class="title-secondary">Capitais</h2>
             <ul class="capitals__list">
