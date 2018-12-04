@@ -150,7 +150,15 @@ ul {
       font-weight: 100; }
 
 .capitals {
-  padding: 2.5rem 2rem 0 2rem; }
+  padding: 2.5rem 4rem 0; }
+  .capitals__header {
+    margin-bottom: 1.5rem; }
+  .capitals__list-min-max {
+    margin-bottom: 1.25rem; }
+  .capitals__item {
+    display: flex;
+    font-weight: 900;
+    color: #272727; }
 
 .app {
   background-image: linear-gradient(to bottom, #ff8000 20%, #ffb043);
