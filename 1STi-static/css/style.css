@@ -35,7 +35,8 @@ ul {
   font-weight: 700; }
 
 .thin {
-  font-weight: 100; }
+  font-weight: 100;
+  color: #515151; }
 
 .primary {
   color: #ff8000;
@@ -45,6 +46,11 @@ ul {
   color: #ffffff;
   font-weight: 900;
   font-size: 2.5rem; }
+
+.title-primary-lg {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 3.25rem; }
 
 @keyframes grow {
   0% {
@@ -142,6 +148,9 @@ ul {
     width: 100%; }
     .search__form-input::placeholder {
       font-weight: 100; }
+
+.capitals {
+  padding: 2.5rem 2rem 0 2rem; }
 
 .app {
   background-image: linear-gradient(to bottom, #ff8000 20%, #ffb043);
