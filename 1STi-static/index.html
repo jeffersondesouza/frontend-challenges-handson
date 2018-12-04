@@ -29,8 +29,18 @@
             </div>
             <div class="city__max-min">
                 <div class="city__variation">
-                    <div class="bold">!16</div>
-                    <div class="bold">!25</div>
+                    <div class="bold">
+                        <svg class="icon city__icon">
+                            <use xlink:href="img/sprite.svg#icon-arrow-up2"></use>
+                        </svg>
+                        16
+                    </div>
+                    <div class="bold">
+                        <svg class="icon city__icon">
+                            <use xlink:href="img/sprite.svg#icon-arrow-down2"></use>
+                        </svg>
+                        25
+                    </div>
                 </div>
                 <div class="city__fell">
                     <span class="thin">Sensação</span>
@@ -77,12 +87,19 @@
 
             </ul>
         </section>
-        <form action="" class="search__form">
-            <label for="">
-                <input type="text" placeholder="Insira aqui o nome da cidade">
-                <span>O</span>
-            </label>
-        </form>
+
+        <section class="container search">
+            <form action="" class="search__form">
+                <label class="search__form-group">
+                    <input class="search__form-input" type="text" placeholder="Insira aqui o nome da cidade">
+                    <svg class="icon search__icon">
+                        <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                </label>
+            </form>
+        </section>
+
+
         <section class="capitals">
             <h2 class="title-secondary">Capitais</h2>
             <ul class="capitals__list">
