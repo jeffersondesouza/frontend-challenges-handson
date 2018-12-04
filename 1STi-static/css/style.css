@@ -123,6 +123,8 @@ ul {
   width: 1.5rem; }
 
 .search {
+  padding-top: 1.5rem;
+  padding-bottom: 2.25rem;
   border-bottom: 1.25px solid #FEF4E2; }
   .search__form-group {
     position: relative; }
@@ -147,7 +149,8 @@ ul {
   min-height: 100vh; }
 
 .container {
-  padding: 0 1.5rem; }
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
 
 .header {
   display: flex;
