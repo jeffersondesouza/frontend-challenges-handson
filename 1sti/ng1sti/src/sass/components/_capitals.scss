@@ -1,0 +1,47 @@
+.capitals {
+    margin: 2rem auto 0;
+    width: 80%;
+    @include respond(phone) {
+        width: 40rem;
+    }
+    @include respond(tab) {
+        width: 45rem;
+    }
+    &__header {
+        margin-bottom: 1.5rem;
+    }
+    &__list-min-max {
+        margin-bottom: 1.25rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include respond(phone) {
+            flex-direction: row;
+        }
+    }
+    &__item {
+        display: flex;
+        font-size: 1.6rem;
+        font-weight: 900;
+        color: $gray-dark;
+        margin-right: 1rem;
+        &:not(:last-child) {
+            margin-bottom: 2.25rem;
+        };
+        @include respond(phone) {
+            width: 100%;
+        }
+        @include respond(phone) {
+            width: 40%;
+        }
+    
+    }
+    &__item-max-min {
+        margin-right: 1.5rem;
+        flex: 0 0 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
