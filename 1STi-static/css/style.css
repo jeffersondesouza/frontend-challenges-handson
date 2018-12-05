@@ -155,6 +155,9 @@ ul {
     margin-bottom: 1.5rem; }
   .capitals__list-min-max {
     margin-bottom: 1.25rem; }
+  .capitals__list {
+    display: flex;
+    flex-direction: column; }
   .capitals__item {
     display: flex;
     font-weight: 900;
@@ -163,12 +166,12 @@ ul {
       margin-bottom: 2.25rem; }
   .capitals__item-max-min {
     margin-right: 1.5rem;
-    flex: 0 0 15%;
+    flex: 0 0 17%;
     display: flex;
     justify-content: space-between; }
 
 .app {
-  background-image: linear-gradient(to bottom, #ff8000 20%, #ffb043);
+  background-image: linear-gradient(to bottom, #ff8000 5%, #ffb043);
   background-repeat: no-repeat;
   min-height: 100vh; }
 

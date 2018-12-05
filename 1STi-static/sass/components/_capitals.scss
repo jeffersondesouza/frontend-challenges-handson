@@ -6,7 +6,10 @@
     &__list-min-max {
         margin-bottom: 1.25rem;
     }
-    &__list {}
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
     &__item {
         display: flex;
         font-weight: 900;
@@ -17,7 +20,7 @@
     }
     &__item-max-min {
         margin-right: 1.5rem;
-        flex: 0 0 15%;
+        flex: 0 0 17%;
         display: flex;
         justify-content: space-between;
     }
