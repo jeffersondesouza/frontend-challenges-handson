@@ -8,10 +8,13 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sass": "sass --watch src/styles/scss:src/styles/css",
+    "sass:build": "sass src/styles/scss:src/styles/css",
+    "start": "react-scripts start",
+    "build": "npm run sass:build && react-scripts build"
+    
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +24,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "node-sass": "^4.10.0",
+    "sass": "^1.15.1"
+  }
 }

@@ -3,7 +3,6 @@ import arrdown2 from './img/SVG/arrow-down2.svg';
 import arrup2 from './img/SVG/arrow-up2.svg';
 import searchicon from './img/SVG/search.svg';
 
-import './App.css';
 
 class App extends Component {
   render() {
