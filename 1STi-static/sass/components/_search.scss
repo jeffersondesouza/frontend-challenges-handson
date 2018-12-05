@@ -8,7 +8,7 @@
         width: 45rem;
     }
     @include respond(tab) {
-        width: 45%;
+        width: 50rem;
         display: flex;
         justify-content: center;
     }

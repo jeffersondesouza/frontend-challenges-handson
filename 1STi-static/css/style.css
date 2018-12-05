@@ -143,7 +143,7 @@ ul {
       width: 45rem; } }
   @media only screen and (min-width: 48em) {
     .search {
-      width: 45%;
+      width: 50rem;
       display: flex;
       justify-content: center; } }
   .search__form-group {
@@ -171,10 +171,10 @@ ul {
   width: 80%; }
   @media only screen and (min-width: 37.5em) {
     .capitals {
-      width: 60%; } }
+      width: 40rem; } }
   @media only screen and (min-width: 48em) {
     .capitals {
-      width: 40%; } }
+      width: 45rem; } }
   .capitals__header {
     margin-bottom: 1.5rem; }
   .capitals__list-min-max {
@@ -188,18 +188,20 @@ ul {
         flex-direction: row; } }
   .capitals__item {
     display: flex;
-    flex: 0 0 55%;
     font-size: 1.6rem;
     font-weight: 900;
     color: #272727;
-    margin-right: 2.5rem; }
+    margin-right: 1rem; }
     .capitals__item:not(:last-child) {
       margin-bottom: 2.25rem; }
-    @media only screen and (min-width: 64em) {
+    @media only screen and (min-width: 37.5em) {
       .capitals__item {
-        flex: 0 0 45%; } }
+        width: 100%; } }
+    @media only screen and (min-width: 37.5em) {
+      .capitals__item {
+        width: 40%; } }
   .capitals__item-max-min {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     flex: 0 0 5rem;
     display: flex;
     justify-content: space-between; }

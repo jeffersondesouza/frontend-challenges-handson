@@ -2,10 +2,10 @@
     margin: 2rem auto 0;
     width: 80%;
     @include respond(phone) {
-        width: 60%;
+        width: 40rem;
     }
     @include respond(tab) {
-        width: 40%;
+        width: 45rem;
     }
     &__header {
         margin-bottom: 1.5rem;
@@ -23,21 +23,23 @@
     }
     &__item {
         display: flex;
-        flex: 0 0 55%;
         font-size: 1.6rem;
         font-weight: 900;
         color: $gray-dark;
-        margin-right: 2.5rem;
+        margin-right: 1rem;
         &:not(:last-child) {
             margin-bottom: 2.25rem;
+        };
+        @include respond(phone) {
+            width: 100%;
         }
-        ;
-        @include respond(lap) {
-            flex: 0 0 45%;
+        @include respond(phone) {
+            width: 40%;
         }
+    
     }
     &__item-max-min {
-        margin-right: 2rem;
+        margin-right: 1.5rem;
         flex: 0 0 5rem;
         display: flex;
         justify-content: space-between;
