@@ -1,5 +1,13 @@
 .capitals {
-    padding: 2.5rem 4rem 0;
+    width: 90%;
+    margin: 2rem auto 0;
+    padding-left: 4rem !important;
+    @include respond(phone) {
+        width: 60%;
+    }
+    @include respond(tab) {
+        width: 70%;
+    }
     &__header {
         margin-bottom: 1.5rem;
     }
@@ -9,18 +17,28 @@
     &__list {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        @include respond(phone) {
+            flex-direction: row;
+        }
     }
     &__item {
         display: flex;
+        font-size: 1.8rem;
         font-weight: 900;
+        margin-right: 5rem;
         color: $gray-dark;
         &:not(:last-child) {
             margin-bottom: 2.25rem;
         }
+        ;
+        @include respond(tab) {
+            flex: 0 0 40%;
+        }
     }
     &__item-max-min {
-        margin-right: 1.5rem;
-        flex: 0 0 17%;
+        margin-right: 3rem;
+        flex: 0 0 5srem;
         display: flex;
         justify-content: space-between;
     }

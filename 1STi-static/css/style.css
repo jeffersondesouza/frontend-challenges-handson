@@ -150,23 +150,40 @@ ul {
       font-weight: 100; }
 
 .capitals {
-  padding: 2.5rem 4rem 0; }
+  width: 90%;
+  margin: 2rem auto 0;
+  padding-left: 4rem !important; }
+  @media only screen and (min-width: 37.5em) {
+    .capitals {
+      width: 60%; } }
+  @media only screen and (min-width: 48em) {
+    .capitals {
+      width: 70%; } }
   .capitals__header {
     margin-bottom: 1.5rem; }
   .capitals__list-min-max {
     margin-bottom: 1.25rem; }
   .capitals__list {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: wrap; }
+    @media only screen and (min-width: 37.5em) {
+      .capitals__list {
+        flex-direction: row; } }
   .capitals__item {
     display: flex;
+    font-size: 1.8rem;
     font-weight: 900;
+    margin-right: 5rem;
     color: #272727; }
     .capitals__item:not(:last-child) {
       margin-bottom: 2.25rem; }
+    @media only screen and (min-width: 48em) {
+      .capitals__item {
+        flex: 0 0 40%; } }
   .capitals__item-max-min {
-    margin-right: 1.5rem;
-    flex: 0 0 17%;
+    margin-right: 3rem;
+    flex: 0 0 5srem;
     display: flex;
     justify-content: space-between; }
 
