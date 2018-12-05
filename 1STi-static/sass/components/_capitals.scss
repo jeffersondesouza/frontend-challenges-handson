@@ -7,9 +7,18 @@
         margin-bottom: 1.25rem;
     }
     &__list {}
-    &__item{
+    &__item {
         display: flex;
         font-weight: 900;
         color: $gray-dark;
+        &:not(:last-child) {
+            margin-bottom: 2.25rem;
+        }
+    }
+    &__item-max-min {
+        margin-right: 1.5rem;
+        flex: 0 0 15%;
+        display: flex;
+        justify-content: space-between;
     }
 }

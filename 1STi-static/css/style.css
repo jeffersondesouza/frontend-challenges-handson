@@ -159,6 +159,13 @@ ul {
     display: flex;
     font-weight: 900;
     color: #272727; }
+    .capitals__item:not(:last-child) {
+      margin-bottom: 2.25rem; }
+  .capitals__item-max-min {
+    margin-right: 1.5rem;
+    flex: 0 0 15%;
+    display: flex;
+    justify-content: space-between; }
 
 .app {
   background-image: linear-gradient(to bottom, #ff8000 20%, #ffb043);
