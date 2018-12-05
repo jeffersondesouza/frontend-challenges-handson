@@ -1,12 +1,11 @@
 .capitals {
-    width: 90%;
     margin: 2rem auto 0;
-    padding-left: 4rem !important;
+    width: 80%;
     @include respond(phone) {
         width: 60%;
     }
     @include respond(tab) {
-        width: 70%;
+        width: 40%;
     }
     &__header {
         margin-bottom: 1.5rem;
@@ -24,21 +23,22 @@
     }
     &__item {
         display: flex;
-        font-size: 1.8rem;
+        flex: 0 0 55%;
+        font-size: 1.6rem;
         font-weight: 900;
-        margin-right: 5rem;
         color: $gray-dark;
+        margin-right: 2.5rem;
         &:not(:last-child) {
             margin-bottom: 2.25rem;
         }
         ;
-        @include respond(tab) {
-            flex: 0 0 40%;
+        @include respond(lap) {
+            flex: 0 0 45%;
         }
     }
     &__item-max-min {
-        margin-right: 3rem;
-        flex: 0 0 5srem;
+        margin-right: 2rem;
+        flex: 0 0 5rem;
         display: flex;
         justify-content: space-between;
     }
