@@ -11,10 +11,13 @@
     animation: grow .5s ease-in;
     background-color: $color-terciary;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
-
     color: $gray-dark-1;
     transition: max-height 2s ease-in;
     overflow: hidden;
+ 
+    @include respond(phone) {
+        margin: 1.5rem 22rem 0;
+    }
     &>* {
         padding: 0 2.5rem;
     }
@@ -25,7 +28,7 @@
         justify-content: space-between;
         margin-bottom: 1rem;
     }
-    &__icon{
+    &__icon {
         fill: $color-primary;
     }
     &__header-city {

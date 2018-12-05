@@ -65,6 +65,9 @@ ul {
   color: #515151;
   transition: max-height 2s ease-in;
   overflow: hidden; }
+  @media only screen and (min-width: 37.5em) {
+    .city {
+      margin: 1.5rem 22rem 0; } }
   .city > * {
     padding: 0 2.5rem; }
   .city__header {
@@ -204,3 +207,13 @@ ul {
   z-index: 10;
   position: relative;
   width: 100%; }
+  @media only screen and (min-width: 37.5em) {
+    .header {
+      box-shadow: none;
+      justify-content: center; } }
+  .header__title {
+    color: #ffffff;
+    font-weight: 900; }
+    @media only screen and (min-width: 37.5em) {
+      .header__title {
+        font-size: 4rem; } }

@@ -1,6 +1,5 @@
 .header {
     // border-bottom: 1px solid $white;
-
     display: flex;
     align-items: center;
     padding: 1.5rem 2.5rem;
@@ -8,5 +7,15 @@
     z-index: 10;
     position: relative;
     width: 100%;
-    &__details {}
+    @include respond(phone) {
+        box-shadow: none;
+        justify-content: center;
+    }
+    &__title {
+        color: $white;
+        font-weight: 900;
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+    }
 }
