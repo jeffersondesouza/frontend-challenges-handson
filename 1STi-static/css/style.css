@@ -64,10 +64,12 @@ ul {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   color: #515151;
   transition: max-height 2s ease-in;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto; }
   @media only screen and (min-width: 37.5em) {
     .city {
-      margin: 1.5rem 22rem 0; } }
+      width: 41rem; } }
   .city > * {
     padding: 0 2.5rem; }
   .city__header {
@@ -134,7 +136,11 @@ ul {
 .search {
   padding-top: 1.5rem;
   padding-bottom: 2.25rem;
-  border-bottom: 1.25px solid #FEF4E2; }
+  border-bottom: 1.25px solid #FEF4E2;
+  margin: 0 auto; }
+  @media only screen and (min-width: 37.5em) {
+    .search {
+      width: 45rem; } }
   .search__form-group {
     position: relative; }
   .search__icon {
@@ -151,6 +157,9 @@ ul {
     width: 100%; }
     .search__form-input::placeholder {
       font-weight: 100; }
+    @media only screen and (min-width: 37.5em) {
+      .search__form-input {
+        width: 41rem; } }
 
 .capitals {
   width: 90%;

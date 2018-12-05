@@ -2,6 +2,11 @@
     padding-top: 1.5rem;
     padding-bottom: 2.25rem;
     border-bottom: 1.25px solid $color-terciary;
+    margin: 0 auto;
+
+    @include respond(phone) {
+        width: 45rem;
+    }
     &__form-group {
         position: relative;
     }
@@ -21,5 +26,9 @@
         &::placeholder {
             font-weight: 100;
         }
+        @include respond(phone) {
+            width: 41rem;
+        }
+    
     }
 }

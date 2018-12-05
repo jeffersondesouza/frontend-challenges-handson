@@ -14,9 +14,10 @@
     color: $gray-dark-1;
     transition: max-height 2s ease-in;
     overflow: hidden;
- 
+    width: 100%;
+    margin: 0 auto;
     @include respond(phone) {
-        margin: 1.5rem 22rem 0;
+        width: 41rem;
     }
     &>* {
         padding: 0 2.5rem;
