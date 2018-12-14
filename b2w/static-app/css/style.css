@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+.page {
+  display: flex;
+  min-height: 100vh; }
+
+.sidebar {
+  background: green;
+  flex: 0 0 37%;
+  padding: 35px; }
+
+.content {
+  background: pink;
+  flex: 0 0 63%;
+  padding: 35px; }
