@@ -13,8 +13,8 @@
     "sass": "sass --watch src/styles/scss:src/styles/css",
     "sass:build": "sass src/styles/scss:src/styles/css",
     "start": "react-scripts start",
+    "start:sass": "npm start && npm run sass",
     "build": "npm run sass:build && react-scripts build"
-    
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,7 +26,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "node-sass": "^4.10.0",
     "sass": "^1.15.1"
   }
 }
